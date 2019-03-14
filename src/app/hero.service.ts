@@ -9,7 +9,7 @@ import { MessagesService } from './messages.service';
 export class HeroService {
   constructor(private messageService: MessagesService) {}
   getHeroes(): Observable<Hero[]> {
-    this.messageService.add('HeroService:fetched heroes');
+    this.messageService.add('HeroService: fetched heroes');
     return of(HEROES);
   }
 }
